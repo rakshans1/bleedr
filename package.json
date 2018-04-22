@@ -1,0 +1,29 @@
+{
+  "name": "bleedr",
+  "version": "1.0.0",
+  "description": "Javacript performance graph in browser.",
+  "main": "dist/bleedr.umd.js",
+  "module": "dist/bleedr.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakshans1/bleedr.git"
+  },
+  "keywords": [
+    "performance",
+    "monitor"
+  ],
+  "author": "Rakshan Shetty <shetty.raxx555@gmail.com> (http://rakshanshetty.in)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rakshans1/bleedr/issues"
+  },
+  "homepage": "https://github.com/rakshans1/bleedr#readme",
+  "devDependencies": {
+    "rollup": "0.58.1",
+    "rollup-plugin-uglify": "^3.0.0"
+  }
+}
