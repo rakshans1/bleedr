@@ -80,8 +80,8 @@ export default class Bleedr {
     const diff = now - this.last;
     this.last = now;
     this.bleedContainer.childNodes[this.index % frames].style.backgroundImage = this.getHex(diff);
-    this.index++;
     this.bleedContainer.childNodes[this.index % frames].style.height = diff + "px";
+    this.index++;
     this.bleedContainer.childNodes[this.index % frames].style.background = "black";
     requestAnimationFrame(this.refresh.bind(this));
   }
